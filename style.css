@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bebefa;
+}
+
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 30px;
+  text-transform: uppercase;
+}
+.container_wrapper {
+  display: flex;
+  width: 80%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border: 2px solid #5479df;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 200px;
+  height: 40px;
+}
+
+.item:hover {
+  cursor: move;
+  background-color: #cecece;
+  border: 2px solid white;
+}
+
+.active{
+  background-color:  #ccc;
+}
+.highlight {
+  background-color: #7878ec;
+}
+
+.image {
+  width: 100px;
+  height: 40px;
+  padding: 2px;
+}
+
+#resetButton {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  background-color: #0113df;
+  outline: none;
+  border: none;
+  transition: all ease 0.3s;
+  border-radius: 3px;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+#resetButton:hover {
+  background-color: #070063;
+}
+
+#resetButton:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width:580px) {
+  .container_wrapper {
+    width: 100%;
+  }
+}
